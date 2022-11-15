@@ -9,11 +9,11 @@ fetch(URL)
         data.forEach(frase => {
             const names = '<h2>' + frase.nombreAutor + '</h2>';
             const frases = '<p style="color:blue">'+frase.fraseAutor +'</p>'
-            const link = '<p>Descripción: '+ frase.linkAutor +'</p>'
+            const links = '<a href="'+ frase.linkAutor +'">Para saber mas sobre el autor Click aquí</a>'
 
             divFrases.insertAdjacentHTML('beforeend', names)
             divFrases.insertAdjacentHTML('beforeend', frases)
-            divFrases.insertAdjacentHTML('beforeend', link)
+            divFrases.insertAdjacentHTML('beforeend', links)
 
         });
     })
