@@ -7,13 +7,12 @@ fetch(URL)
     })
     .then(data => {
         data.forEach(frase => {
-            const names = '<h2>' + frase.nombreAutor + '</h2>';
-            const frases = '<p style="color:blue">'+frase.fraseAutor +'</p>'
-            const links = '<a href="'+ frase.linkAutor +'">Para saber mas sobre el autor Click aquí</a>'
+            const names = '<h2 style="color:blue">' + frase.nombreAutor + '</h2>';
+            const frases = '<p>' + frase.fraseAutor + '</p>'
+            const links = '<a href="' + frase.linkAutor + '">Para saber mas sobre el autor Click aquí</a>'
+            const divPorAutores = '<div class="conteinerFrases">' + names + frases + links + '</div>'
 
-            divFrases.insertAdjacentHTML('beforeend', names)
-            divFrases.insertAdjacentHTML('beforeend', frases)
-            divFrases.insertAdjacentHTML('beforeend', links)
+            divFrases.insertAdjacentHTML('beforeend', divPorAutores)
 
         });
     })
