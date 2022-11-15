@@ -5,12 +5,14 @@
 }
 
 h1 {
-    text-decoration: underline;
+    text-align: center;
     font-family: 'Rubik Bubbles', cursive;
+    font-size: 90px;
+    color: rgba(52, 49, 49, 0.488);
 }
 
 h2{
-    color:rgb(19, 36, 152);
+    color:rgb(16, 16, 212);
 }
 
 .containerFrases {
@@ -36,5 +38,5 @@ a:hover {
 }
 
 body {
-    background: radial-gradient(circle, rgba(255, 0, 0, 0.568), rgba(255, 255, 0, 0.505), rgba(0, 0, 255, 0.588), green);
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.568), rgba(255, 255, 0, 0.505), green);
 }
