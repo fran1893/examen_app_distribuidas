@@ -19,14 +19,17 @@ app.get('/scraper', (req, res) => {
             const $ = cheerio.load(html);
 
             const frases = []
-            $('.col-sm-4', html).each(function () {                
-                const nombreAutor = $(this).find('h4 a').attr('title');
+            $('.quote', html).each(function () {                
+                const nombreAutor = $(this).find('.author').text();
                
-                const fraseAutor = $(this).find('.price').text();
+                const fraseAutor = $(this).find('.text').text();
+
+                const linkAutor = URL + $(this).find('a').attr('href');
 
                 frases.push({
                     nombreAutor,
-                    fraseAutor
+                    fraseAutor,
+                    linkAutor
                 });
 
 
