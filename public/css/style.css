@@ -20,3 +20,7 @@ h1{
 p{
     font-weight: bold;
 }
+
+a:hover{
+    color: brown;
+}
