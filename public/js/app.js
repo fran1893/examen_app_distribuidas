@@ -10,7 +10,7 @@ fetch(URL)
             const names = '<h2 style="color:blue">' + frase.nombreAutor + '</h2>';
             const frases = '<p>' + frase.fraseAutor + '</p>'
             const links = '<a href="' + frase.linkAutor + '">Para saber mas sobre el autor Click aquí</a>'
-            const divPorAutores = '<div class="conteinerFrases">' + names + frases + links + '</div>'
+            const divPorAutores = '<div class="containerFrases">' + names + frases + links + '</div>'
 
             divFrases.insertAdjacentHTML('beforeend', divPorAutores)
 

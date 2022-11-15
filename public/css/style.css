@@ -7,3 +7,10 @@
 h1{
     text-decoration: underline;
 }
+
+.containerFrases{
+    border-width: 5px;
+    border-style: double;
+    border-color: blue;
+    border-radius: 10px;
+}
